@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/weather/static/js/main.02549853.chunk.js",
-    "main.js.map": "/weather/static/js/main.02549853.chunk.js.map",
-    "runtime~main.js": "/weather/static/js/runtime~main.6cff1e35.js",
-    "runtime~main.js.map": "/weather/static/js/runtime~main.6cff1e35.js.map",
-    "static/css/2.7da6bfae.chunk.css": "/weather/static/css/2.7da6bfae.chunk.css",
-    "static/js/2.f976449f.chunk.js": "/weather/static/js/2.f976449f.chunk.js",
-    "static/js/2.f976449f.chunk.js.map": "/weather/static/js/2.f976449f.chunk.js.map",
-    "index.html": "/weather/index.html",
-    "precache-manifest.58dbd43d9b1a4bb894e7b83ccd9298fa.js": "/weather/precache-manifest.58dbd43d9b1a4bb894e7b83ccd9298fa.js",
-    "service-worker.js": "/weather/service-worker.js",
-    "static/css/2.7da6bfae.chunk.css.map": "/weather/static/css/2.7da6bfae.chunk.css.map",
-    "static/media/arrow.svg": "/weather/static/media/arrow.1eb74ee1.svg",
-    "static/media/loader.gif": "/weather/static/media/loader.7171bba4.gif",
-    "static/media/slick-theme.css": "/weather/static/media/slick.f97e3bbf.svg"
+    "main.js": "/weather-app/static/js/main.e0a6cb00.chunk.js",
+    "main.js.map": "/weather-app/static/js/main.e0a6cb00.chunk.js.map",
+    "runtime~main.js": "/weather-app/static/js/runtime~main.4606d7f5.js",
+    "runtime~main.js.map": "/weather-app/static/js/runtime~main.4606d7f5.js.map",
+    "static/css/2.7f3e6d9d.chunk.css": "/weather-app/static/css/2.7f3e6d9d.chunk.css",
+    "static/js/2.37af55f7.chunk.js": "/weather-app/static/js/2.37af55f7.chunk.js",
+    "static/js/2.37af55f7.chunk.js.map": "/weather-app/static/js/2.37af55f7.chunk.js.map",
+    "index.html": "/weather-app/index.html",
+    "precache-manifest.0a75dd9b06ae3f5a9849ec09ac272759.js": "/weather-app/precache-manifest.0a75dd9b06ae3f5a9849ec09ac272759.js",
+    "service-worker.js": "/weather-app/service-worker.js",
+    "static/css/2.7f3e6d9d.chunk.css.map": "/weather-app/static/css/2.7f3e6d9d.chunk.css.map",
+    "static/media/arrow.svg": "/weather-app/static/media/arrow.1eb74ee1.svg",
+    "static/media/loader.gif": "/weather-app/static/media/loader.7171bba4.gif",
+    "static/media/slick-theme.css": "/weather-app/static/media/slick.f97e3bbf.svg"
   }
 }
