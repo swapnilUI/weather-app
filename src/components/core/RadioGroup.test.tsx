@@ -14,7 +14,7 @@ const FakeOptions = [
 
 const onRadioChange = jest.fn();
 
-describe('MyComponent', () => {
+describe('RadioGroup', () => {
   it('should render correctly', () => {
     const component = shallow(<RadioGroupTag onRadioChange={onRadioChange} defaultValue={FakeOptions[0].value} options={FakeOptions}  />);
     expect(component).toMatchSnapshot();

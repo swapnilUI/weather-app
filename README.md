@@ -9,7 +9,9 @@ Application design is responsive.
 ## Development Info
 
 Built using - Typescript, React js, Redux
+
 Packages used -  Styled components, Axios, Redux Thunk, Material-Ui
+
 Testing - Jest, Enzyme
 
 ## Testing Info

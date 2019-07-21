@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MyComponent should render correctly 1`] = `ShallowWrapper {}`;
+
+exports[`RadioGroup should render correctly 1`] = `ShallowWrapper {}`;
