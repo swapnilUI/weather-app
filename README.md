@@ -6,6 +6,8 @@ This is a small weather app. It shows temparature in Celcius and Fahrenheit.
 
 Application design is responsive.
 
+Demo - https://swapnilui.github.io/weather-app/
+
 ## Development Info
 
 Built using - Typescript, React js, Redux
