@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { RadioGroupTag, IRadioGroupTagState } from './RadioGroup';
 
 const FakeOptions = [
@@ -25,10 +25,9 @@ describe('RadioGroup', () => {
     expect(state.value).toEqual(FakeOptions[0].value)
   });
   it('should change value on click', () =>{
-    const component = shallow(<RadioGroupTag onRadioChange={onRadioChange} defaultValue={FakeOptions[0].value} options={FakeOptions}  />);
-    const label = component.find(`label`).at(1);
-    label.simulate('click');
-    const state:any = component.state()
+    const component = mount(<RadioGroupTag onRadioChange={onRadioChange} defaultValue={FakeOptions[0].value} options={FakeOptions}  />);
+    component.find(`input[value='imperial']`).simulate('change', { target: {value:'imperial'}})
+    const state:any = component.state();
     expect(state.value).toEqual(FakeOptions[1].value)
   })
 });

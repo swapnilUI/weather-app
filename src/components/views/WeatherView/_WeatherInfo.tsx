@@ -29,7 +29,7 @@ export class WeatherInfo extends React.PureComponent<IWeatherInfo>{
                     <RadioGroupTag defaultValue={selectedUnit} options={Units} onRadioChange={this.props.onUnitChange} />
                 </RadioGroupWrapper>
                 { daysData.length > 0 ? <><DayCardsSlider onCardChange={this.onCardChange} selected={selected} dates={dates} daysData={daysData} />
-                <BarChart chartLabel={`Temparature in ${selectedUnit=== TempUnit.METRIC ? TempUnit.CELECIUS:TempUnit.FAHRENHEIT}`} labels={labels} data={temps} /></> : <ErrorAlert error={`No weather data available`} />}
+                <BarChart selectedUnit={selectedUnit} chartLabel={`Temparature in ${selectedUnit=== TempUnit.METRIC ? TempUnit.CELECIUS:TempUnit.FAHRENHEIT}`} labels={labels} data={temps} /></> : <ErrorAlert error={`No weather data available`} />}
             </WeatherInfoWrapper>
         )
     }

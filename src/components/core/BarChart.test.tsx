@@ -8,7 +8,7 @@ const FakeData= [1,2,3]
 
 describe('BarChart', () => {
   it('should render correctly', () => {
-    const component = shallow(<BarChart chartLabel={FakeChartLabel} labels={FakeLabels} data={FakeData} />);
+    const component = shallow(<BarChart selectedUnit="Celcius" chartLabel={FakeChartLabel} labels={FakeLabels} data={FakeData} />);
     expect(component).toMatchSnapshot();
   });
 });

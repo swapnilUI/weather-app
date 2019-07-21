@@ -2,7 +2,7 @@ const APPID = `75f972b80e26f14fe6c920aa6a85ad57`
 const COUNT = "40"
 const CITY = "Munich"
 const COUNTRYCODE = "de"
-const openweathermapURL = `http://api.openweathermap.org/data/2.5/forecast?q=${CITY},${COUNTRYCODE}&APPID=${APPID}&cnt=${COUNT}&units={unit}`
+const openweathermapURL = `https://api.openweathermap.org/data/2.5/forecast?q=${CITY},${COUNTRYCODE}&APPID=${APPID}&cnt=${COUNT}&units={unit}`
 
 export const openweathermapEndpoint=(unit:string) => {
     return openweathermapURL.replace('{unit}', unit);

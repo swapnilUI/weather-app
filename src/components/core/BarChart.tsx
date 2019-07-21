@@ -1,14 +1,16 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import { TempUnit } from '../../assets/common/Contstants';
 
 interface IBarChartProps{
     labels:string[]
     data:number[]
     chartLabel:string
+    selectedUnit?:string
 }
 export class BarChart extends React.PureComponent<IBarChartProps>{
     public render() {
-        const { labels, data,chartLabel } = this.props
+        const { labels, data,chartLabel, selectedUnit } = this.props
         const chartData = {
             labels: [...labels],
             datasets: [
@@ -23,7 +25,7 @@ export class BarChart extends React.PureComponent<IBarChartProps>{
               }
             ]
           };
-          
+        const unit = selectedUnit && selectedUnit === TempUnit.METRIC ? "C": "F";
         return (
           <div>
             <Bar
@@ -32,7 +34,15 @@ export class BarChart extends React.PureComponent<IBarChartProps>{
               height={300}
               options={{
                 maintainAspectRatio: false,
-                labels:false
+                scales:{
+                  yAxes:[{
+                    ticks: {
+                      callback: function(value:string) {
+                          return `${value} ° ${unit}`;
+                      }
+                    }
+                  }]
+                }
               }}
             />
           </div>
